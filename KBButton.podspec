@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
   # added to the Pods project. If the pattern is a directory then the
   # path will automatically have '*.{h,m,mm,c,cpp}' appended.
   #
-  s.source_files = ' KBButton/KBButton', ' KBButton/KBButton/**/*.{h,m}'
+  s.source_files = 'KBButton/KBButton', ' KBButton/KBButton/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
 
   # A list of file patterns which select the header files that should be
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
   # If you do not explicitly set the list of public header files,
   # all headers of source_files will be made public.
   #
-  # s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'KBButton/KBButton/**/*.h'
 
   # A list of resources included with the Pod. These are copied into the
   # target bundle with a build phase script.
