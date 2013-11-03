@@ -15,6 +15,11 @@
     [[self cell] setKBButtonType:type];
 }
 
+-(void)setBoldText:(BOOL)boldText
+{
+    [[self cell] setBoldText:boldText];
+}
+
 - initWithCoder: (NSCoder *)origCoder
 {
 	BOOL sub = YES;

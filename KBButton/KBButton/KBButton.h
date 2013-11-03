@@ -12,6 +12,8 @@
 
 @interface KBButton : NSButton
 
+@property (nonatomic, assign) BOOL boldText;
+
 - (void) setKBButtonType:(BButtonType)type;
 
 @end

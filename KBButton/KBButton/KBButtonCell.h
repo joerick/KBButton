@@ -21,6 +21,7 @@ typedef enum {
 @interface KBButtonCell : NSButtonCell {
     NSColor *_color;
     BButtonType kbButtonType;
+    BOOL _boldText;
 }
 @end
 

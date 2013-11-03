@@ -17,6 +17,11 @@
     [[NSGraphicsContext currentContext] restoreGraphicsState];
 }
 
+-(void)setBoldText:(BOOL)bold
+{
+    _boldText = bold;
+}
+
 - (NSColor*)getColorForButtonType {
     switch (kbButtonType) {
         case BButtonTypeDefault:
@@ -107,6 +112,12 @@
     
     [attrString addAttribute:NSForegroundColorAttributeName value:titleColor range:NSMakeRange(0, [[self title] length])];
     [attrString endEditing];
+    
+    if (_boldText)
+    {
+        [attrString applyFontTraits:NSBoldFontMask range: NSMakeRange(0, [attrString length])];
+    }
+    
     NSRect r = [super drawTitle:attrString withFrame:frame inView:controlView];
     // 5) Restore the graphics state
     [ctx restoreGraphicsState];
