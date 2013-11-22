@@ -16,12 +16,15 @@ typedef enum {
     BButtonTypeWarning,
     BButtonTypeDanger,
     BButtonTypeInverse,
+    BButtonTypeCustom
 } BButtonType;
 
 @interface KBButtonCell : NSButtonCell {
-    NSColor *_color;
+    NSColor *_color,
+            *_userDefinedColor;
     BButtonType kbButtonType;
     BOOL _boldText;
 }
+
 @end
 

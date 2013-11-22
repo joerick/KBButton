@@ -7,9 +7,9 @@
 Pod::Spec.new do |s|
   s.name         = "KBButton"
   s.version      = "0.0.1"
-  s.summary      = "A short description of KBButton."
+  s.summary      = "Twitter Bootstrap like Buttons for OSX."
   s.description  = ""
-  s.homepage     = "http://EXAMPLE/KBButton"
+  s.homepage     = "https://github.com/dsci/KBButton"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
   # Specify the license type. CocoaPods detects automatically the license file if it is named
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "git@github.com:i386/KBButton.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/dsci/KBButton", :branch => "master" }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and

@@ -20,6 +20,10 @@
     [[self cell] setBoldText:boldText];
 }
 
+-(void) setKBButtonColor:(NSColor *)color{
+  [[self cell] setKBButtonColor:color];
+}
+
 - initWithCoder: (NSCoder *)origCoder
 {
 	BOOL sub = YES;

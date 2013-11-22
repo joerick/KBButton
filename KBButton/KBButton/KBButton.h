@@ -15,5 +15,6 @@
 @property (nonatomic, assign) BOOL boldText;
 
 - (void) setKBButtonType:(BButtonType)type;
+- (void) setKBButtonColor: (NSColor *) color;
 
 @end

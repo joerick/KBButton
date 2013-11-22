@@ -17,6 +17,11 @@
     [[NSGraphicsContext currentContext] restoreGraphicsState];
 }
 
+- (void) setKBButtonColor:(NSColor *) color{
+  _userDefinedColor = color;
+  [self setKBButtonType:BButtonTypeCustom];
+}
+
 -(void)setBoldText:(BOOL)bold
 {
     _boldText = bold;
@@ -44,6 +49,9 @@
             break;
         case BButtonTypeInverse:
             return [NSColor colorWithCalibratedRed:0.13f green:0.13f blue:0.13f alpha:1.00f];
+            break;
+        case BButtonTypeCustom:
+            return _userDefinedColor;
     }
 }
 

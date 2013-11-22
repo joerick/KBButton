@@ -2,22 +2,47 @@
 
 KBButton is a subclass of NSButton. It was adapted from [http://github.com/mattlawer/BButton](http://github.com/mattlawer/BButton) to work under Cocoa on Mac OS X.
 
-<img src="http://i.imgur.com/wURhe.png" />
+<img src="http://f.cl.ly/items/1s0Y3Q111B1l0U300q47/Screen%20Shot%202013-11-22%20at%2019.42.33.png" />
+
+Install
+-----
+
+Use CocoaPods and add to your ```Podfile```
+
+```
+pod 'KBButton',
+    :git    => 'git@github.com:dsci/KBButton.git',
+    :branch => 'master'
+```
+
 
 Usage
 -----
-Start by dragging the KBButton folder into your Xcode project. Make sure you use the following settings:
-- Destination: [x] Copy items into destination group's folder (if needed)
-- Folders: (*) Create groups for any added folders
-- Add to targets: [x] your-xcode-project
 
 1. Create a NSButton instance in interface builder.
 2. Set the class of the NSButton to KBButton
 
-### Changing the Color programatically ###
+### Changing the Color programatically 
 
 1. Connect NSButton to IBOutlet through Interface Builder
 2. call [[button cell] setKBButtonType:BButtonTypeDefault] in awakeFromNib. In the example this is done in KBAppDelegate.m
+
+### Using a custom color
+
+Follow step 1 of the *Changing the Color programatically* section
+
+Then call in ```awakeFromNib```:
+
+```objective-c
+- (void)awakeFromNib {
+    NSColor *facebookColor = [NSColor colorWithCalibratedRed:0.178
+                                                       green:0.268
+                                                        blue:0.525
+                                                       alpha:1.000];
+	[[button cell] setKBButtonColor: facebookColor];   
+}
+```
+
 
 License
 -------
