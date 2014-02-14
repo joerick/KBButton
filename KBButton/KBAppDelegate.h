@@ -21,5 +21,6 @@
 @property (assign) IBOutlet NSButton *dangerButton;
 @property (assign) IBOutlet NSButton *inverseButton;
 @property (assign) IBOutlet NSButton *customColorButton;
+@property (assign) IBOutlet NSButton *customTextColorButton;
 
 @end

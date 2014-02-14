@@ -2,7 +2,7 @@
 
 KBButton is a subclass of NSButton. It was adapted from [http://github.com/mattlawer/BButton](http://github.com/mattlawer/BButton) to work under Cocoa on Mac OS X.
 
-<img src="http://f.cl.ly/items/1s0Y3Q111B1l0U300q47/Screen%20Shot%202013-11-22%20at%2019.42.33.png" />
+<img src="http://f.cl.ly/items/2R1h0D2R1j3J2K1Q371u/Screen%20Shot%202014-02-14%20at%2008.00.28.png" />
 
 Install
 -----
@@ -43,10 +43,20 @@ Then call in ```awakeFromNib```:
 }
 ```
 
+### Using a custom text color
+
+Follow step 1 of the *Changing the Color programatically* section. You may want to use your own color. 
+
+Then call in ```awakeFromNib```:
+
+```objective-c
+[[button cell] setKBButtonTextColor:[NSColor blackColor]];
+```
+
 
 License
 -------
-This library is licensed under the [MIT license](https://github.com/kwbock/KBButton/blob/master/MIT-LICENSE).
+This library is licensed under the [MIT license](https://github.com/dsci/KBButton/blob/master/MIT-LICENSE).
 
 Contributing
 ------------

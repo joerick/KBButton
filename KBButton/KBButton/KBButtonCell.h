@@ -20,10 +20,12 @@ typedef enum {
 } BButtonType;
 
 @interface KBButtonCell : NSButtonCell {
-    NSColor *_color,
-            *_userDefinedColor;
-    BButtonType kbButtonType;
-    BOOL _boldText;
+  NSColor *_color,
+          *_userDefinedColor,
+          *_userDefinedTextColor;
+  BButtonType kbButtonType;
+  BOOL _boldText;
+  BOOL _customTextColorForced;
 }
 
 @end

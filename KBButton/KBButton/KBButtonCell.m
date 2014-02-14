@@ -11,6 +11,14 @@
 
 @implementation KBButtonCell
 
+- (id) initWithCoder:(NSCoder *) origCoder{
+  self = [super initWithCoder:origCoder];
+  if(self){
+    _customTextColorForced = NO;
+  }
+  return self;
+}
+
 - (void)setKBButtonType:(BButtonType)type {
     [[NSGraphicsContext currentContext] saveGraphicsState];
     kbButtonType = type;
@@ -25,6 +33,11 @@
 -(void)setBoldText:(BOOL)bold
 {
     _boldText = bold;
+}
+
+- (void) setKBButtonTextColor: (NSColor *) color{
+  _customTextColorForced = YES;
+  _userDefinedTextColor = color;
 }
 
 - (NSColor*)getColorForButtonType {
@@ -112,12 +125,16 @@
     NSMutableAttributedString *attrString = [title mutableCopy];
     [attrString beginEditing];
     NSColor *titleColor;
-    if ([[self getColorForButtonType] isLightColor]) {
+    if(_customTextColorForced){
+      titleColor = _userDefinedTextColor;
+    }else{
+      if ([[self getColorForButtonType] isLightColor]) {
         titleColor = [NSColor blackColor];
-    } else {
+      } else {
         titleColor = [NSColor whiteColor];
+      }
     }
-    
+  
     [attrString addAttribute:NSForegroundColorAttributeName value:titleColor range:NSMakeRange(0, [[self title] length])];
     [attrString endEditing];
     
