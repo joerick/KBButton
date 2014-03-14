@@ -18,7 +18,8 @@
             dangerButton,
             inverseButton,
             customColorButton,
-            customTextColorButton;
+            customTextColorButton,
+            customBorderedButton;
 
 - (void)awakeFromNib {
     NSColor *facebookColor = [NSColor colorWithCalibratedRed:0.178
@@ -30,6 +31,9 @@
                                                         blue:0.037
                                                        alpha:1.000];
   
+    NSColor *whiteColor   = [[NSColor whiteColor]
+                             colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
+  
     [[defaultButton cell] setKBButtonType:BButtonTypeDefault];
     [[primaryButton cell] setKBButtonType:BButtonTypePrimary];
     [[infoButton cell] setKBButtonType:BButtonTypeInfo];
@@ -40,6 +44,9 @@
     [[customColorButton cell] setKBButtonColor:facebookColor];
     [[customTextColorButton cell] setKBButtonColor:yellowColor];
     [[customTextColorButton cell] setKBButtonTextColor:[NSColor blackColor]];
+  
+    [[customBorderedButton cell] setKBButtonColor:whiteColor];
+    [[customBorderedButton cell] setKBButtonBorderColor:[NSColor blackColor]];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification

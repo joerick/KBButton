@@ -17,5 +17,6 @@
 - (void) setKBButtonType:(BButtonType)type;
 - (void) setKBButtonColor: (NSColor *) color;
 - (void) setKBButtonTextColor:(NSColor *)color;
+- (void) setKBButtonBorderColor: (NSColor *) borderColor;
 
 @end

@@ -2,7 +2,7 @@
 
 KBButton is a subclass of NSButton. It was adapted from [http://github.com/mattlawer/BButton](http://github.com/mattlawer/BButton) to work under Cocoa on Mac OS X.
 
-<img src="http://f.cl.ly/items/2R1h0D2R1j3J2K1Q371u/Screen%20Shot%202014-02-14%20at%2008.00.28.png" />
+<img src="http://f.cl.ly/items/0Q1J2x0o150w1Y1p0c1R/Screen%20Shot%202014-03-14%20at%2010.17.13.png" />
 
 Install
 -----
@@ -51,6 +51,16 @@ Then call in ```awakeFromNib```:
 
 ```objective-c
 [[button cell] setKBButtonTextColor:[NSColor blackColor]];
+```
+
+### Using a border color
+
+Follow step 1 of the *Changing the Color programatically* section. 
+
+Then call in ```awakeFromNib```:
+
+```objective-c
+[[button cell] setKBButtonBorderColor: [NSColor whiteColor]];
 ```
 
 

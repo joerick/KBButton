@@ -28,6 +28,10 @@
   [[self cell] setKBButtonTextColor:color];
 }
 
+- (void) setKBButtonBorderColor:(NSColor *)borderColor{
+  [[self cell] setKBButtonBorderColor:borderColor];
+}
+
 - initWithCoder: (NSCoder *)origCoder
 {
 	BOOL sub = YES;

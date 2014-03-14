@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32F6159F-6FF8-4EFD-B248-C73F76D9ABA9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KBButton</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>15B5B3EA-773F-4B27-B5D3-D139625053B0</key>
+		<string>ssh://github.com/dsci/KBButton.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KBButton.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>15B5B3EA-773F-4B27-B5D3-D139625053B0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/dsci/KBButton.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>15B5B3EA-773F-4B27-B5D3-D139625053B0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15B5B3EA-773F-4B27-B5D3-D139625053B0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KBButton</string>
+		</dict>
+	</array>
+</dict>
+</plist>

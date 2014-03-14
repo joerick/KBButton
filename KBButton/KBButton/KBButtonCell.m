@@ -15,6 +15,7 @@
   self = [super initWithCoder:origCoder];
   if(self){
     _customTextColorForced = NO;
+    _borderForced = NO;
   }
   return self;
 }
@@ -38,6 +39,11 @@
 - (void) setKBButtonTextColor: (NSColor *) color{
   _customTextColorForced = YES;
   _userDefinedTextColor = color;
+}
+
+- (void) setKBButtonBorderColor: (NSColor *) color{
+  _borderForced           = YES;
+  _userDefinedBorderColor = color;
 }
 
 - (NSColor*)getColorForButtonType {
@@ -102,7 +108,16 @@
     
     //draw inner button area
     [ctx saveGraphicsState];
-    
+  
+  
+    //[NSBezierPath strokeRect:frame];
+    if(_borderForced){
+      NSBezierPath* outerPath = [NSBezierPath bezierPathWithRoundedRect:frame xRadius:roundedRadius yRadius:roundedRadius];
+      [_userDefinedBorderColor set];
+      [outerPath setClip];
+      [outerPath stroke];
+    }
+  
     NSBezierPath* bgPath = [NSBezierPath bezierPathWithRoundedRect:NSInsetRect(frame, 1.0f, 1.0f) xRadius:roundedRadius yRadius:roundedRadius];
     [bgPath setClip];
     
