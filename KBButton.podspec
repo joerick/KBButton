@@ -8,20 +8,20 @@ Pod::Spec.new do |s|
   s.name         = "KBButton"
   s.version      = "0.0.1"
   s.summary      = "Twitter Bootstrap like Buttons for OSX."
-  s.description  = ""
+  s.description  = "An NSButton subclass with modified appearance"
   s.homepage     = "https://github.com/dsci/KBButton"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
   # Specify the license type. CocoaPods detects automatically the license file if it is named
   # 'LICENCE*.*' or 'LICENSE*.*', however if the name is different, specify it.
-  s.license      = 'MIT (example)'
+  s.license      = 'MIT'
   # s.license      = { :type => 'MIT (example)', :file => 'FILE_LICENSE' }
 
   # Specify the authors of the library, with email addresses. You can often find
   # the email addresses of the authors by using the SCM log. E.g. $ git log
   #
   #s.author       = { "James Dumay" => "james.w.dumay@gmail.com" }
-  # s.authors      = { "James Dumay" => "james.w.dumay@gmail.com", "other author" => "and email address" }
+  s.authors      = { "dsci" => "dsci@github.com" }
   #
   # If absolutely no email addresses are available, then you can use this form instead.
   #
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "https://github.com/dsci/KBButton", :branch => "master" }
+  s.source       = { :git => "https://github.com/joerick/KBButton.git", :branch => "master" }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
