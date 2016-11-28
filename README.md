@@ -11,7 +11,7 @@ Use CocoaPods and add to your ```Podfile```
 
 ```
 pod 'KBButton',
-    :git    => 'git@github.com:dsci/KBButton.git',
+    :git    => 'git@github.com:joerick/KBButton.git',
     :branch => 'master'
 ```
 
